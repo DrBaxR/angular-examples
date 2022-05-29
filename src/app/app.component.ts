@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-examples';
+
+  contextImplicit = { $implicit: 'John' };
+  contextAll = { $implicit: 'John', contextSurname: 'Doe' };
 }

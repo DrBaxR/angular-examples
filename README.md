@@ -1,3 +1,3 @@
 # About
 
-A bunch of samples of Angular concepts. Each sample has its own branch and the **master** branch contains an empty project.
+Sample of how you can use template contexts. More info [here](https://angular.io/api/common/NgTemplateOutlet#description).

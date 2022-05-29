@@ -1,0 +1,26 @@
+<!-- shorthand notation -->
+<ng-container *ngTemplateOutlet="simple"></ng-container>
+<ng-container *ngTemplateOutlet="implicit; context: contextImplicit"></ng-container>
+<ng-container *ngTemplateOutlet="all; context: contextAll"></ng-container>
+<hr />
+<!-- long notation -->
+<ng-template [ngTemplateOutlet]="simple"></ng-template>
+<ng-template [ngTemplateOutlet]="implicit"
+             [ngTemplateOutletContext]="contextImplicit">
+</ng-template>
+<ng-template [ngTemplateOutlet]="all"
+             [ngTemplateOutletContext]="contextAll">
+</ng-template>
+
+<ng-template #simple>
+  <div>This is a simple template that does not use any context.</div>
+</ng-template>
+<ng-template #implicit
+             let-name>
+  <div>This is a template that has an implicit context of value: {{ name }}</div>
+</ng-template>
+<ng-template #all
+             let-name
+             let-surname="contextSurname">
+  <div>This one has an implicit value and some other fields in the context: {{ name }} and {{ surname }}</div>
+</ng-template>
