@@ -1,3 +1,3 @@
-# About
+# Structural surective sample
 
-A bunch of samples of Angular concepts. Each sample has its own branch and the **master** branch contains an empty project.
+This code illustrates some of the things you can do with structural directives. Explainations [here](https://youtu.be/zpVVHI21TAo).

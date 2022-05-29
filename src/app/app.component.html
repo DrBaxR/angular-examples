@@ -1,0 +1,17 @@
+<main>
+  <h1>Structural Directives</h1>
+  <section *appHideAfter="3000 as time; then placeholderBanner; let counterRef = counter"
+           class="banner">
+    <h2>Temporary content</h2>
+    <p>This layout should disappear in {{ time / 1000 }} seconds.</p>
+    <p>Time left: {{ counterRef }}</p>
+  </section>
+  <ng-template #placeholderBanner
+               let-hiddenAfter>
+    <section>
+      <h2>There used to be something here...</h2>
+      <p>Not anymore tho 😳</p>
+      <p>The thing vanished in {{ hiddenAfter / 1000 }} seconds...</p>
+    </section>
+  </ng-template>
+</main>
