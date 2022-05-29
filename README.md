@@ -1,3 +1,3 @@
-# About
+# Example of dynamic component loading in Angular
 
-A bunch of samples of Angular concepts. Each sample has its own branch and the **master** branch contains an empty project.
+[This](https://angular.io/guide/dynamic-component-loader) project from the Angular docs. Some minor adjustments were made to the initial structure of the project/code.
