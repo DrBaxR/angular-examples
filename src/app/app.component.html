@@ -1,0 +1,5 @@
+<div *appCarousel="let image of images; let ctrl = controller">
+  <img [src]="image" />
+  <button (click)="ctrl.prev()">Previous</button>
+  <button (click)="ctrl.next()">Next</button>
+</div>
